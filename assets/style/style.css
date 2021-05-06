@@ -1,0 +1,648 @@
+/*COMMON*/
+.two .box1-inner-two h2, .three h2, .four h2, .five h2, .six h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.three h3, footer h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.one p, .two .box1-inner-two p, .three p, .four p, .five p, .six p, footer p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #202020;
+}
+
+.one button, .two .box1-inner-two button, .three button, .four button, .six button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+}
+
+/*HEADER*/
+.header {
+  padding: 0rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.header .logo {
+  height: 50px;
+  width: 55px;
+  margin-right: 0.3rem;
+}
+
+.header .logo-name {
+  height: 50px;
+  width: 190px;
+}
+
+.header .head-box {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-head li {
+  margin: 0px 20px;
+}
+
+.nav-head li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-head li:hover::after {
+  width: 100%;
+}
+
+.nav-head-color a {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.nav-head a {
+  font-weight: 600;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+}
+
+.nav-head .head-read {
+  color: rgba(255, 0, 0, 0.699);
+}
+
+.signup-a {
+  padding: 10px;
+  border: 1px solid red;
+}
+
+/*ONE*/
+.one {
+  height: 80vh;
+  background-image: url(/assets/media/verylarge.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.one .box-one {
+  position: absolute;
+  top: 15%;
+  left: 27%;
+  width: 700px;
+  height: 250px;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
+.one h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: black;
+  padding: 1rem 0;
+}
+
+.one p {
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.one button {
+  cursor: pointer;
+}
+
+/*TWO*/
+.two {
+  background-color: rgba(0, 0, 0, 0.103);
+  background-image: url(/assets/media/white-marble1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.two .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+}
+
+.two em {
+  color: red;
+  font-weight: 600;
+}
+
+.two .box1-two {
+  cursor: pointer;
+  position: relative;
+}
+
+.two .box1-two:hover .box1-inner-two {
+  display: inline-block;
+}
+
+.two .box1-inner-two {
+  display: none;
+  position: absolute;
+  top: 1%;
+}
+
+.two .box1-inner-two span {
+  color: #ED563A;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.two .box1-inner-two h2 {
+  padding: 0.5rem 0;
+}
+
+.two .box1-inner-two p {
+  padding: 0.5rem 8rem;
+}
+
+/*THREE*/
+.three {
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+}
+
+.three h2 {
+  padding: 1rem 0;
+}
+
+.three h3 {
+  padding: 1rem 0;
+}
+
+.three p {
+  padding: 1rem 3rem;
+}
+
+.three .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+  margin-top: 2rem;
+  gap: 0.2rem;
+}
+
+.three .image1-three {
+  background-image: url(/assets/media/kitchen-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.three .image2-three {
+  background-image: url(/assets/media/bathroom-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.three .grid-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+  margin-top: 0.2rem;
+}
+
+.three .image3-three {
+  background-image: url(/assets/media/dining-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.three .box-three {
+  padding: 1rem 0.5rem;
+  height: auto;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*FOUR*/
+.four {
+  margin: 0.1rem 0;
+  height: 80vh;
+  background-image: url(/assets/media/stone-beauty.jfif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.four h2 {
+  padding: 1rem 0;
+}
+
+.four p {
+  padding: 1rem 0;
+}
+
+.four div:empty {
+  width: 60px;
+  border-top: 2px solid black;
+}
+
+.four .box-four {
+  position: absolute;
+  top: 15%;
+  left: 32%;
+  padding: 2rem 1rem;
+  width: 500px;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.541);
+}
+
+/*FIVE*/
+.five {
+  background-image: url(/assets/media/white-marble1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.five h2 {
+  padding: 1rem 0;
+}
+
+.five p {
+  padding: 0.1rem 0;
+}
+
+.five .box-five {
+  padding: 1rem 0;
+}
+
+.five .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 350px;
+      grid-template-rows: 350px;
+  gap: 0.1rem;
+}
+
+.five .image1-five {
+  background-image: url(/assets/media/dining-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.five .image1-five:hover {
+  background-image: url(/assets/media/dining-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.five .image2-five {
+  background-image: url(/assets/media/image-9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.five .image2-five:hover {
+  background-image: url(/assets/media/bathroom-stone.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.five .image3-five {
+  background-image: url(/assets/media/image-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.five .image3-five:hover {
+  background-image: url(/assets/media/image-5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.five .image4-five {
+  background-image: url(/assets/media/kitchen-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.five .image4-five:hover {
+  background-image: url(/assets/media/kitchen-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*SIX*/
+.six {
+  padding: 1rem 0;
+  background-image: url(/assets/media/request.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.six .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+}
+
+.six h2 {
+  padding: 1rem 0;
+}
+
+.six i {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  color: black;
+}
+
+.six .boxl-six {
+  padding: 4rem 0;
+}
+
+.six .form-form {
+  padding: 1rem 0;
+  width: 90%;
+}
+
+.six .form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  background-color: transparent;
+  font-weight: 700;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.six .form-control::-webkit-input-placeholder {
+  color: black;
+}
+
+.six .form-control:-ms-input-placeholder {
+  color: black;
+}
+
+.six .form-control::-ms-input-placeholder {
+  color: black;
+}
+
+.six .form-control::placeholder {
+  color: black;
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 1rem;
+  background-color: #F8FAFE;
+}
+
+footer .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+}
+
+footer img {
+  width: 60px;
+  height: 50px;
+}
+
+footer a {
+  color: black;
+  font-size: 0.9rem;
+}
+
+footer li {
+  padding: 0.5rem 0;
+}
+
+footer i {
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+footer i:hover {
+  color: wheat;
+}
+
+footer p {
+  padding: 1rem 0rem;
+}
+
+footer address {
+  margin-left: 0.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0rem 0;
+  margin: 0 auto;
+}
+
+.container1 {
+  max-width: 1200px;
+  padding: 0rem 0;
+  margin: 0 auto;
+}
+
+/*   flex */
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-center {
+  place-content: center;
+}
+
+/*GRID*/
+.grid-center {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+/*WIDTH*/
+.width-100 {
+  width: 100%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.3;
+  font-size: 16px;
+  font-family: 'Archivo', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HOVER */
+body a {
+  text-decoration: none;
+}
+
+body a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body button {
+  border: none;
+}
+
+body button:hover {
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

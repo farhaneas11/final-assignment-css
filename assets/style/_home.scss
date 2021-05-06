@@ -1,0 +1,438 @@
+/*COMMON*/
+%h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+%h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+%p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(32, 32, 32);   
+    
+}
+%button{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: red;
+    border: 2px solid red ;
+}
+/*HEADER*/
+.header {    
+    padding: 0rem 0;
+    width: 100%;     
+    position:relative;    
+    
+    .logo{
+        height: 50px;
+        width: 55px;
+        margin-right: 0.3rem;
+    }
+    .logo-name{
+        height: 50px;
+        width: 190px;
+    }
+    .head-box{
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        //background-color: rgba(0, 0, 0, 0.192);
+        width: 100%;
+        z-index: 99;
+    }
+}
+
+.nav-head li {
+    margin: 0px 20px;
+}
+.nav-head li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-head li:hover::after{
+    width: 100%;
+}
+.nav-head-color a{
+    color: red;
+    font-size: 0.85rem;
+}
+.nav-head a{
+    
+    font-weight: 600;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+.nav-head .head-read {
+    color:rgba(255, 0, 0, 0.699) ;
+}
+.signup-a {    
+    padding: 10px;
+    border: 1px solid red;
+}
+/*ONE*/
+.one{    
+    height: 80vh;
+    background-image: url(/assets/media/verylarge.jpg);     
+           
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    position: relative; 
+    .box-one{
+        position: absolute;
+        top: 15%;
+        left: 27%;
+        width: 700px;
+        height: 250px;
+        padding: 1rem 0;
+        background-color: rgba(255, 255, 255, 0.123);
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 400;
+        color: black;  
+        padding: 1rem 0;
+    }
+    p{
+        @extend %p;     
+        padding-bottom: 1rem;  
+        color: black 
+    }
+    button{        
+        @extend %button;
+        cursor: pointer;           
+        
+    }
+}
+
+/*TWO*/
+.two{
+    background-color:  rgba(0, 0, 0, 0.103);
+    background-image: url(/assets/media/white-marble1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+    }
+    em{
+        color: red;
+        font-weight: 600;
+    }
+    .box1-two{        
+        cursor: pointer;
+        position: relative;
+        &:hover .box1-inner-two{
+            display: inline-block;
+        }        
+    }  
+    .box1-inner-two{
+        display: none;
+        position: absolute;
+        top: 1%;
+        span{
+             color:#ED563A ;
+             font-size: 0.9rem;
+             font-weight: 600;
+        }   
+        h2{
+            @extend %h2;   
+            padding: 0.5rem 0; 
+                   
+        }
+        p{
+            @extend %p; 
+            padding: 0.5rem 8rem;  
+                        
+        }
+        button{
+            @extend %button;
+        }
+    } 
+    
+    
+}
+/*THREE*/
+.three{    
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+    h2{
+        @extend %h2;
+        padding: 1rem 0;
+    }
+    h3{
+        @extend %h3;
+        padding: 1rem 0;
+    }
+    p{
+        @extend %p;
+        padding: 1rem 3rem;
+    }
+    button{
+        @extend %button;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        margin-top: 2rem;
+        gap: 0.2rem;
+    }
+    .image1-three{
+        background-image: url(/assets/media/kitchen-1.jpg);
+        background-position: center;
+    
+        background-size: cover;
+        background-repeat: no-repeat;    
+    }
+    .image2-three{
+        background-image: url(/assets/media/bathroom-1.jpg);
+        background-position: center;
+        
+        background-size: cover;
+        background-repeat: no-repeat;    
+    }
+    .grid-1{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 400px;
+        margin-top: 0.2rem;
+    }
+    .image3-three{
+        background-image: url(/assets/media/dining-1.jpg);
+        background-position: center;        
+        background-size: cover;
+        background-repeat: no-repeat; 
+         
+    }   
+    .box-three{
+        padding: 1rem 0.5rem;
+        height: auto;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+/*FOUR*/
+.four{
+    margin: 0.1rem 0;
+    height: 80vh;
+    background-image: url(/assets/media/stone-beauty.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    position: relative;
+    h2{
+        @extend %h2;
+        padding: 1rem 0
+    }
+    p{
+        @extend %p;
+        padding: 1rem 0;
+    }
+    div:empty{
+        width:60px ;
+        border-top: 2px solid black;
+    }
+    .box-four{
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        padding: 2rem 1rem;
+        width: 500px;
+        height: 270px;
+        background-color: rgba(255, 255, 255, 0.541);
+        
+    }
+    button{
+        @extend %button;
+    }
+}
+/*FIVE*/
+.five{
+    background-image: url(/assets/media/white-marble1.jpg);
+    background-position: center;        
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+    h2{
+        @extend %h2;
+        padding: 1rem 0;
+    }
+    p{
+        @extend %p;
+        padding: 0.1rem 0;
+    }
+    .box-five{
+        padding: 1rem 0;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns:repeat(4 , 1fr);
+        grid-template-rows: 350px;
+        gap: 0.1rem;
+    }
+    .image1-five{
+        background-image: url(/assets/media/dining-2.jpg);     
+           
+        background-position: center;        
+        background-size: cover;
+        background-repeat: no-repeat; 
+        transition: 1s;
+        &:hover{
+            background-image: url(/assets/media/dining-1.jpg);     
+           
+            background-position: center;        
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }  
+    }
+    .image2-five{
+        background-image: url(/assets/media/image-9.jpg);  
+           
+        background-position: center;        
+        background-size: cover;
+        background-repeat: no-repeat; 
+        transition: 1s;
+        &:hover{
+            background-image: url(/assets/media/bathroom-stone.jpg);     
+           
+            background-position: center;        
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }    
+    }
+    .image3-five{
+        background-image: url(/assets/media/image-2.jpg);     
+           
+        background-position: center;        
+        background-size: cover;
+        background-repeat: no-repeat;   
+        transition: 1s;
+        &:hover{
+            background-image: url(/assets/media/image-5.jpg);     
+           
+            background-position: center;        
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }  
+    }
+    .image4-five{
+        background-image: url(/assets/media/kitchen-4.jpg);     
+           
+        background-position: center;        
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s; 
+        &:hover{
+            background-image: url(/assets/media/kitchen-1.jpg);     
+           
+            background-position: center;        
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }    
+    }
+}
+/*SIX*/
+.six{
+    padding:1rem 0;
+    background-image: url(/assets/media/request.jpg);
+    background-position: center;        
+    background-size: cover;
+    background-repeat: no-repeat;
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+    }
+    h2{
+        @extend %h2;
+        padding: 1rem 0
+    }
+    p{
+        @extend %p;
+    }
+    i{
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        color: black
+    }
+    .boxl-six{
+        padding: 4rem 0;
+    }
+    button{
+        @extend %button;        
+    }
+    .form-form{
+        padding: 1rem 0;
+        width: 90%;
+    }
+    .form-control{
+        width: 100%;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        background-color: transparent;
+        font-weight: 700;
+        border: 1px solid black;
+        margin-bottom: 1rem;                
+        &::placeholder{
+            color: black;
+        }
+    }
+
+}
+/*FOOTER*/
+footer{
+    margin-top: 1rem;
+    background-color: #F8FAFE;
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 250px;
+    }
+    h3{
+        @extend %h3;
+        font-size: 1.5rem;
+    }
+    img{
+        width: 60px;
+        height: 50px;
+    }
+    a{
+        color: black;
+        font-size: 0.9rem;
+    }
+    li{
+        padding: 0.5rem 0;
+    }
+    i{
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+        &:hover{
+            color: wheat;
+        }
+    }
+    p{
+        @extend %p;
+        padding: 1rem 0rem;
+    }
+    address{
+        margin-left: 0.5rem;
+    }
+}
